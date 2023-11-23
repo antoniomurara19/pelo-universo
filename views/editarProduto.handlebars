@@ -1,0 +1,64 @@
+<h2>Verificar se tal viagem existe : </h2>
+<form action="/consultaProduto" method="post">
+    <label for="nome">Nome da Viagem : </label><br>
+    <input type="text" name="nome" placeholder="Ex : Plutão"><br>
+    <br>
+    <button type="submit">Consultar</button>
+    {{#if msg}}
+    <p>{{msg}}</p>
+    {{/if}}
+</form>
+<br>
+<table border="1">
+    <thead>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Tempo</th>
+        <th>Quantidade Disponível</th>
+        <th>Preço R$</th>
+        <th>Descrição</th>
+    </thead>
+    <tbody>
+    {{#each valor}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.nome}}</td>
+            <td>{{this.tempo}}</td>
+            <td>{{this.quantidade_estoque}}</td>
+            <td>{{this.preco}}</td>
+            <td>{{this.descricao}}</td>
+        </tr>
+    {{/each}} 
+    </tbody>
+</table>
+<br>
+<h2>Atualização da Viagem</h2>
+<br>
+<form action="/editarProduto" method="post">
+
+    <label for="id">Id do Produto:</label><br>
+    <input type="text" name="id" placeholder="Id"><br>
+
+    <label for="nome">Nome da Viagem : </label><br>
+    <input type="text" name="nome" placeholder="Ex : Plutão"><br>
+
+    <label for="tempo">Tempo da Viagem : </label><br>
+    <input type="text" name="tempo" placeholder="Ex : 1000 anos"><br>
+
+    <label for="quantidade_estoque">Quantidade das Viangens Disponíveis : </label><br>
+    <input type="number" name="quantidade_estoque" placeholder="Ex : 100"><br>
+
+    <label for="preco">Preço da Viagem : </label><br>
+    <input type="number" name="preco" placeholder="Ex : 190000000"><br>
+
+    <label for="descricao">Descrição da Viagem : </label><br>
+    <input type="text" name="descricao" placeholder="Ex : Vá dormindo"><br>
+    <br>
+    <button type="submit">Editar</button>
+</form><br>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}} 
+{{#if msgB}}
+    <p>{{msgB}}</p>
+{{/if}} 

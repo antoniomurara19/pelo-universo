@@ -1,0 +1,43 @@
+<h2>Verificar se tal viagem existe : </h2>
+<form action="/consultaProduto" method="post">
+    <label for="nome">Nome da Viagem : </label><br>
+    <input type="text" name="nome" placeholder="Ex : Plutão"><br>
+    <br>
+    <button type="submit">Consultar</button>
+</form>
+<br>
+<table border="1">
+    <thead>
+        <th>Nome</th>
+        <th>Tempo</th>
+        <th>Quantidade Disponível</th>
+        <th>Preço R$</th>
+        <th>Descrição</th>
+    </thead>
+    <tbody>
+    {{#each valores}}
+        <tr>
+            <td>{{this.nome}}</td>
+            <td>{{this.tempo}}</td>
+            <td>{{this.quantidade_estoque}}</td>
+            <td>{{this.preco}}</td>
+            <td>{{this.descricao}}</td>
+        </tr>
+    {{/each}} 
+    </tbody>
+</table>
+<br>
+<h2>Excluir Produtos</h2>
+<br>
+<form action="/apagarProduto" method="post">
+    <label for="id">Id do Produto:</label><br>
+    <input type="text" name="id" placeholder="Id"><br>
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}} 
+{{#if msgB}}
+    <p>{{msgB}}</p>
+{{/if}} 

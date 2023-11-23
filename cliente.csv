@@ -1,0 +1,6 @@
+"id";"usuario";"email";"telefone";"cpf";"senha";"tipo"
+1;"antonio";"antonio@gmail.com";"992825576";"09495095905";"$2b$10$FODDTT3HiAspGzQIR7WNSeNBUs5BuLZ27dkq46N0qwtS1qDz9YkyC";"cliente"
+2;"jaime_palilo";"palilo@gmail.com";"992246183";"64694925920";"$2b$10$FODDTT3HiAspGzQIR7WNSeNBUs5BuLZ27dkq46N0qwtS1qDz9YkyC";"admin"
+3;"bobby_fischer";"bobby_fischer@gmail.com";"9812093109209";"09298198299";"$2b$10$FODDTT3HiAspGzQIR7WNSeNBUs5BuLZ27dkq46N0qwtS1qDz9YkyC";"cliente"
+4;"akiba_rubinstein";"akiba_rubinstein@gmail.com";"09123182213";"09123182213";"$2b$10$FODDTT3HiAspGzQIR7WNSeNBUs5BuLZ27dkq46N0qwtS1qDz9YkyC";"cliente"
+5;"pentala_harikrishna";"pentala@gmail.com";"9918781672";"0912312090";"$2b$10$FODDTT3HiAspGzQIR7WNSeNBUs5BuLZ27dkq46N0qwtS1qDz9YkyC";"cliente"

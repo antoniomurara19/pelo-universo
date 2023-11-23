@@ -1,0 +1,25 @@
+<h2>Cadastro de Produtos</h2>
+<form action="/cadastrarProduto" method="post">
+
+    <label for="nome">Nome da Viagem : </label><br>
+    <input type="text" name="nome" placeholder="Ex : Plutão"><br>
+
+    <label for="tempo">Tempo da Viagem : </label><br>
+    <input type="text" name="tempo" placeholder="Ex : 1000 anos"><br>
+
+    <label for="quantidade_estoque">Quantidade das Viangens Disponíveis : </label><br>
+    <input type="number" name="quantidade_estoque" placeholder="Ex : 100"><br>
+
+    <label for="preco">Preço da Viagem : </label><br>
+    <input type="number" name="preco" placeholder="Ex : 190000000"><br>
+
+    <label for="descricao">Descrição da Viagem : </label><br>
+    <input type="text" name="descricao" placeholder="Ex : Vá dormindo"><br>
+    <br>
+
+    <button type="submit">Cadastrar Viagem</button>
+
+</form><br>
+{{#if msg}}
+    <p>{{msg}}</p><br>
+{{/if}} 

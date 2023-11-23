@@ -1,0 +1,26 @@
+<h1>Lista dos Clientes Cadastrados</h1>
+<br>
+<table border="1">
+    <thead>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>CPF</th>
+        <th>Senha</th>
+        <th>Tipo</th>
+    </thead>
+    <tbody>
+    {{#each dados}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.usuario}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.telefone}}</td>
+            <td>{{this.cpf}}</td>
+            <td>{{this.senha}}</td>
+            <td>{{this.tipo}}</td>
+        </tr>
+    {{/each}} 
+    </tbody>
+</table><br><br>

@@ -1,0 +1,24 @@
+<h1>Cadastro do usuário</h1>
+<br>
+<form action="/cadastro" method="post">
+    <label for="usuario">Digite seu Nome</label><br>
+    <input type="text" name="usuario"><br>
+
+    <label for="email">Digite seu email</label><br>
+    <input type="text" name="email"><br>
+
+    <label for="telefone">Digite seu Telefone</label><br>
+    <input type="text" name="telefone"><br>
+
+    <label for="cpf">Digite seu cpf</label><br>
+    <input type="text" name="cpf"><br>
+
+    <label for="senha">Digite sua Senha</label><br>
+    <input type="text" name="senha"><br><br>
+    
+    <button type="submit">Cadastrar</button>
+    <br>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}

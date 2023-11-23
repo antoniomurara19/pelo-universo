@@ -1,0 +1,18 @@
+<div class="tela">
+<h1>Atualizar seus Dados</h1>
+<br>
+<form action="/perfil" method="post">
+    <label for="usuario">Digite seu nome : </label><br>
+    <input type="text" name="usuario"><br>    
+    <label for="senha">Digite sua senha : </label><br>
+    <input type="text" name="senha"><br><br>
+    <button type="submit">Atualizar Dados</button>
+    <br>
+</form>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}
+{{#if msgB}}
+    <p>{{msgB}}</p>
+{{/if}}
+</div>

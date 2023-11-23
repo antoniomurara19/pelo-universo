@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Principal</title>
+</head>
+<body>
+    {{#if log}}
+        <header class="menu">
+            <a href="/"><img class="logo" src="./img/Lua.jpg" alt="Homem pisando na lua"></a>
+            <nav>
+                <ul class="menu_itens">
+                    {{#if adm}}
+                        <a href="/gerenciador">Gerenciador</a>
+                    {{/if}}
+                    <a href="/produtos">Viagens</a>
+                    <a href="/">Principal</a>
+                    <a href="/logout">Logout</a>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div class="car">
+                    <a href="/carrinho"><img class="carrinho" src="./img/carrinho_vazio.png" alt="carrinho"></a><br>
+                    <label for="carrinho">Carrinho</label>
+                </div>
+                <div class="profile">
+                    <a href="/perfil"><img class="perfil" src="./img/user.png" alt="perfil"></a>
+                    <br>
+                    <label id="user">{{usuario}}</label>
+                </div>
+            </div>
+        </header>
+    {{else}}
+        <header class="menu">
+            <a href="/"><img class="logo" src="./img/Lua.jpg" alt="Homem pisando na lua"></a>
+            <nav>
+                <ul class="menu_itens">
+                    <a href="/">Principal</a>
+                    <a href="/login">Login</a>
+                    <a href="/cadastro">Cadastro</a>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img  class="perfil" src="./img/user.png" alt="perfil">
+            </div>
+        </header>
+    {{/if}}
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        <h2>Se inscreva <br> ganhe um desconto especial!</h2>
+        <p>Apesar dos pesares, ainda somos nós que teremos que descer das árvores, desbravar o mundo, lutar por comida, tentar dormir sem sono, olhar pro céu e sonhar com um mundo melhor..</p>
+        <div class="input">
+            <input type="email" placeholder="Digite seu melhor Email"><button type="submit">Inscreva-se</button>
+        </div>
+        <ul>
+            <li>19<h6>Pensamentos revolucionários sobre dogmas</h6></li>
+            <li>3<h6>Primeiro ser-humano a pisar em Saturno foi pela nossa empresa</h6></li>
+            <li>40<h6>Empresa conta com mais de 2147483648 viagens realizadas</h6></li>
+            <li>21<h6>Empresa com segurança, conforto e nostalgia pra você!!</h6></li>
+        </ul>
+    </footer>
+</body>
